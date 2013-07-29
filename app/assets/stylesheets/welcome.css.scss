@@ -8,9 +8,28 @@
   margin: 0px auto;
 }
 
-.sw-header{
+
+@media (min-width: 768px){
+  .sw-header{
   width: 960px;
   height: 315px;
-  background: url("sw_header.gif");
+  background: url("sw_headerDesktop.gif");
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px){
+  .sw-header{
+    width:600px;
+    height:200px;
+    background: url("sw_headerTablet.gif");
+  }
+}
+
+@media (max-width: 480px){
+  .sw-header{
+    width:460px;
+    height: 150px;
+    background: url("sw_headerPhone.gif")
+  }
 }
 
